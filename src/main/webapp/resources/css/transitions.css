@@ -1,0 +1,50 @@
+.scroll-down{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    overflow:hidden
+}
+
+.scroll-down .message{
+    -webkit-transform:translate3d(0, 0, 0);
+    position:absolute;
+    top:100%;
+    opacity:0;
+    z-index:0;
+    -webkit-transition-property:top,opacity;
+    -moz-transition-property:top,opacity;
+    -o-transition-property:top,opacity;
+    transition-property:top, opacity;
+    -webkit-transition-duration:1s;
+    -moz-transition-duration:1s;
+    -o-transition-duration:1s;
+    transition-duration:1s;
+    -webkit-transition-timing-function:ease-in-out;
+    -moz-transition-timing-function:ease-in-out;
+    -o-transition-timing-function:ease-in-out;
+    transition-timing-function:ease-in-out
+}
+
+.scroll-down .message.next{
+    top:-10%
+}
+
+.scroll-down .message.prev-one{
+    top:70%;
+    opacity:.3;
+    z-index:1
+}
+
+.scroll-down .message.focus{
+    top:40%;
+    opacity:1;
+    z-index:3
+}
+
+.scroll-down .message.next-one{
+    top:10%;
+    opacity:.3;
+    z-index:2
+}
